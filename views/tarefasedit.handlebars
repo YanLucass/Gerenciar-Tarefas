@@ -1,0 +1,23 @@
+
+
+<form action="/tarefas/edit" method="POST" class="form">
+<h1>Edite tarefa</h1>
+{{!-- Mandando id por html --}}
+<input type="hidden" name="id" value="{{tarefa.id}}">
+
+<div class="form-control">
+
+    <label for="title">Editar tarefa concluida</label>
+    <input type="text" name="title" placeholder="edite o titulo" value="{{tarefa.title}}">
+</div>
+
+<div class="form-control">
+    <label for="description">Descrição</label>
+    <textarea name="description" >{{tarefa.description}}</textarea>
+</div>
+<div class="result"></div>
+<input type="submit" value="Editar" class="botoes">
+
+</form>
+
+<script src="/js/check.js"></script>

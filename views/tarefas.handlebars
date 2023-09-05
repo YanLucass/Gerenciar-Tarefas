@@ -1,0 +1,16 @@
+
+<div class="tarefas-container">
+    <h2>Tarefas concluidas</h2>
+<a href="/" id="addtasks">Adicionar</a>
+
+{{#each tarefas}}
+    <div>
+       <span class="bold"> <a href="/tarefas/{{this.id}}">{{this.title}}</a>  </span>
+    </div>
+
+    {{/each}}
+</div>
+
+
+
+
